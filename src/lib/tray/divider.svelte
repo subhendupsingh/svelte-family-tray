@@ -1,0 +1,1 @@
+<div id="divider" class="bg-gray-50 w-full h-[1px] my-1"></div>
