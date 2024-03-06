@@ -1,7 +1,7 @@
 <script lang='ts'>
     import anime from 'animejs';
     import * as Tray from "$lib/tray";
-	import { ExternalLink, Twitter, TwitterIcon } from 'lucide-svelte';
+	import { ExternalLink, Github, Twitter, TwitterIcon } from 'lucide-svelte';
 
     const openTray = () => {
         const tray = document.getElementById("tray");
@@ -32,11 +32,19 @@
 <div class="bg-slate-50 h-screen w-screen flex flex-col justify-center items-center gap-4">
     <div class="flex flex-col gap-4 justify-between items-center">
         <h1 class="text-left text-lg text-gray-600 font-semibold">Family's tray system</h1>
-        <a href="https://twitter.com/subhendupsingh" class="text-sm text-blue-500 bg-blue-100 px-4 py-2 rounded-lg flex items-center gap-2">
-            <TwitterIcon class="h-4 w-4" />
-            <span>subhendupsingh</span>
-            <ExternalLink class="h-4 w-4" />
-        </a>
+        <div class="flex items-center gap-4">
+            <a href="https://twitter.com/subhendupsingh" class="text-sm text-blue-500 bg-blue-100 px-4 py-2 rounded-lg flex items-center gap-2">
+                <TwitterIcon class="h-4 w-4" />
+                <span>subhendupsingh</span>
+                <ExternalLink class="h-4 w-4" />
+            </a>
+
+            <a href="https://github.com/subhendupsingh/svelte-family-tray" class="text-sm text-gray-500 bg-gray-100 px-4 py-2 rounded-lg flex items-center gap-2">
+                <Github class="h-4 w-4" />
+                <span>svelte-family-tray</span>
+                <ExternalLink class="h-4 w-4" />
+            </a>
+        </div>
     </div>
 
     <div class="bg-white shadow-sm border-[1px] border-gray-200 rounded-lg flex justify-center items-center m-6 max-w-[692px] h-96 w-[90%] lg:w-1/2 lg:m-0">
